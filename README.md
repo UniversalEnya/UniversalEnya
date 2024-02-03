@@ -1,6 +1,6 @@
 ## About Me
 <div align = "center">
-  <img src = "./webpage files/images/Photo.jpg" alt="Me" title="Me" width="400" height="400"/>
+  <img src = "./webpage files/images/Photo.jpg" alt="Me" title="Me" width="400" height="450"/>
 </div>
 My name is Emma Neeson and I am a postgrad Game Design student. 
 
