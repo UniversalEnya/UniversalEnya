@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+
+:root 
+{
+	--main-color: #470038;
+	--text-color: #ececec;
+	--links-color: #e918bc;
+	--link-underline-color: var(links-color);
+	--navbar-color: var(--main-color);
+	--emailbar-color: var(--main-color);
+	--email-color: var(--links-color)
+}
+
+html 
+{
+    width: 100%;
+}
+
+body 
+{
+	background-color: #333333;
+	font-family:"Merriweather";
+}
+
+/*text elements*/
+.title 
+{
+	color: var(--text-color);
+	text-align: center;
+	font-size: 5vh;
+	padding-bottom: 0vh;
+}
+
+.page-title
+{
+	color: var(--text-color);
+	text-align: center;
+	font-size: 5vh;
+	padding-bottom: 5vh;
+	padding-top: 3vh;
+		margin: 0;
+
+}
+
+.subtitle 
+{
+	color: var(--text-color);
+	text-align: center;
+	font-size: 3vh;
+	padding-bottom: 5vh;
+}
+
+.game-index-title 
+{
+	color: var(--text-color);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.game-index-subtitle 
+{
+	font-style: italic;
+	font-weight: normal;
+	color: var(--text-color);
+}
+
+.description 
+{
+	color: var(--text-color);
+}
+
+.about-me-description 
+{
+	color: var(--text-color);
+	width: 25vw;
+}
+
+.more-info 
+{
+	color: var(--links-color);
+	text-decoration: underline;
+	text-decoration-color:var(--link-underline-color);
+}
+
+.navbar-link 
+{
+	color: var(--links-color);
+}
+
+.about-me-header 
+{
+	color: var(--text-color);
+	text-decoration: underline;
+	text-emphasis: bold;
+}
+
+.email 
+{
+	color: var(--email-color);
+}
+
+.main-text 
+{
+	color: var(--text-color);
+}
+
+/*need for safari*/
+.sticky-footer 
+{ 
+	position: sticky;
+	bottom: 0;
+	background-color: var(--emailbar-color);
+	padding: 1vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack:center;
+	    -ms-flex-pack:center;
+	        justify-content:center;
+	gap: 2vw;
+}
+
+
+/*formating elements*/
+.navbar 
+{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack:center;
+	    -ms-flex-pack:center;
+	        justify-content:center;
+	gap: 2vw;
+	background-color: var(--navbar-color);
+	position: sticky;
+	padding: 1vh;
+	gap: 2vw;
+	top: 0;
+	-ms-flex-item-align: stretch;
+	    -ms-grid-row-align: stretch;
+	    align-self: stretch;
+}
+
+@media (max-width: 768px) 
+{
+	.navbar 
+    {
+		-webkit-box-pack:space-around;
+			-ms-flex-pack:space-around;
+				justify-content:space-around;
+	}
+}
+
+.right-aligned-flexbox 
+{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack:right;
+	    -ms-flex-pack:right;
+	        justify-content:right;
+	-webkit-box-align: right;
+	    -ms-flex-align: right;
+	        align-items: right;
+			margin-top: auto
+}
+
+.vertical-flex 
+{
+	display: flex-inline;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack:center;
+	    -ms-flex-pack:center;
+	        justify-content:center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	gap: 2vh;
+}
+
+.about-me 
+{
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack:center;
+	    -ms-flex-pack:center;
+	        justify-content:center;
+	gap: 1vw;
+	padding: 1vh;
+}
+
+.game 
+{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack:center;
+	    -ms-flex-pack:center;
+	        justify-content:center;
+	gap: 1vw;
+	padding: 1vh;
+}
+
+.game-sidebar 
+{
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack:center;
+	    -ms-flex-pack:center;
+	        justify-content:center;
+	width:25vw
+	
+}
+
+.about-me-sidebar 
+{
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	margin-left: 5vw;
+}
+
+.game-sidebar-game-info 
+{
+	display: flex-inline;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack:center;
+	    -ms-flex-pack:center;
+	        justify-content:center;
+}
+
+.sidebar-image 
+{
+	width:25vw;
+	/*height:14.0625vw;*/
+}
+
+.about-me-image 
+{
+	height:25vw;
+}
+
+.image-word-split
+{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack:center;
+	    -ms-flex-pack:center;
+	        justify-content:center;
+	gap: 2vw;
+}
+
+.flex-25vw 
+{
+	display: flex-inline;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack:center;
+	    -ms-flex-pack:center;
+	        justify-content:center;
+	width:25vw
+}
+
+	
+/*image and video elements*/
+.align-me-center-video 
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:50vw;
+  padding-top:3vh;
+}
+
+.align-me-center-header-video 
+{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width:50vw;
+	height:28.125vw;
+	-webkit-box-pack:center;
+	    -ms-flex-pack:center;
+	        justify-content:center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
+}
+
+
+.in-page-sidebar-image 
+{
+	width:25vw;
+	/*height:14.0625vw;*/
+}
